@@ -5,7 +5,12 @@
 
 package cuentas;
 
-
+/** 
+ * Clase que representa una cuenta bancaria y versión del código creado
+ * @author melga
+ * @version 1.0
+ * @since 1.0
+ */
 public class CCuenta {
 
 
@@ -61,13 +66,20 @@ public class CCuenta {
         return getNombre();
     }
 
-
+/**
+ * Devuelve el saldo despues del ingreso o retirada
+ * @return saldo actualizado
+ */
     public double estado()
     {
         return saldo;
     }
 
-
+/**
+ * La cantidad debe ser mayor que 0.
+ * @param cantidad
+ * @throws Exception
+ */
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)
